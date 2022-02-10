@@ -11,7 +11,12 @@
    
         <h1>Speedy Speech Model</h1>
 
-        <div id="myData"></div>
+        <table id="myData">
+            <tr>
+                <th>ID</th>
+                <th>Sentence</th>
+              </tr>
+        </table>
         <script>
             fetch('sentences.json')
                 .then(function (response) {
@@ -26,8 +31,8 @@
             function appendData(data) {
                 var mainContainer = document.getElementById("myData");
                 for (var i = 0; i < data.length; i++) {
-                    var div = document.createElement("div");
-                    div.innerHTML = data[i].id + '  ' + data[i].sentence;
+                    var div = document.createElement("tr");
+                    div.innerHTML = <td> data[i].id </td>  + <td> data[i].sentence </td>
                     mainContainer.appendChild(div);
                 }
             }
