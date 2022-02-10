@@ -32,11 +32,13 @@
                     console.log('error: ' + err);
                 });
             function appendData(data) {
-                var mainContainer = document.getElementById("myData1");
+                var mainContainer = document.getElementById("myData");
                 for (var i = 0; i < data.length; i++) {
-                    var div = document.createElement("td");
-                    div.innerHTML = data[i].id
-                    div.innerHTML = data[i].sentence
+                    var div = document.createElement("tr");
+                    var td = document.createElement("td");
+                    td.innerHTML = data[i].id
+                    div.innerHTML = td
+                    // div.innerHTML = data[i].id
                     mainContainer.appendChild(div);
                 }
             }
