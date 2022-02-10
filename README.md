@@ -33,3 +33,11 @@ Pages to go to
 [https://kakoozajerry.github.io/examples_page/vits_22k.html](https://kakoozajerry.github.io/examples_page/vits_22k.html)
 
 
+
+# Model Comparisons
+
+[https://kakoozajerry.github.io/examples_page/model_compare.html](https://kakoozajerry.github.io/examples_page/model_compare.html)
+
+
+
+
