@@ -18,7 +18,7 @@ Pages to go to
 ## 4. Vanilla Tacotron2 Model
 ### Uses universal Vocoder
 
-[https://kakoozajerry.github.io/examples_page/vits_22k.html](https://kakoozajerry.github.io/examples_page/vits_22k.html)
+[https://kakoozajerry.github.io/examples_page/vanilla_tacotron2.html](https://kakoozajerry.github.io/examples_page/vanilla_tacotron2.html)
 
 
 ## 5. VITS 44.1kHz
