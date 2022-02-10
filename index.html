@@ -12,9 +12,12 @@
         <h1>Speedy Speech Model</h1>
 
         <table id="myData">
-            <tr>
+             <tr>
                 <th>ID</th>
                 <th>Sentence</th>
+              </tr>
+              <tr id="myData1">
+
               </tr>
         </table>
         <script>
@@ -29,10 +32,11 @@
                     console.log('error: ' + err);
                 });
             function appendData(data) {
-                var mainContainer = document.getElementById("myData");
+                var mainContainer = document.getElementById("myData1");
                 for (var i = 0; i < data.length; i++) {
-                    var div = document.createElement("tr");
-                    div.innerHTML = <td> data[i].id </td>  + <td> data[i].sentence </td>
+                    var div = document.createElement("td");
+                    div.innerHTML = data[i].id
+                    div.innerHTML = data[i].sentence
                     mainContainer.appendChild(div);
                 }
             }
