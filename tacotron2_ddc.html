@@ -18,7 +18,7 @@
 <body>
     
    
-        <h1>VITS model</h1>
+        <h1>Tacotron2 + DDC</h1>
 
         <table id="myData">
              <tr>
@@ -42,7 +42,7 @@
                 var mainContainer = document.getElementById("myData");
                 for (var i = 0; i < data.length; i++) {
                     var tr = document.createElement("tr");
-                    tr.innerHTML = '<td>' + data[i].id + '</td> <td>' + data[i].sentence + '</td>' + '<td><audio controls="" preload="none"><source src="samples/speedy_speech/speedy_speech_' + data[i].id + '.wav"></audio></td>'
+                    tr.innerHTML = '<td>' + data[i].id + '</td> <td>' + data[i].sentence + '</td>' + '<td><audio controls="" preload="none"><source src="samples/tacotron2_ddc/tacotron2_ddc_' + data[i].id + '.wav"></audio></td>'
                     mainContainer.appendChild(tr);
                 }
             }
