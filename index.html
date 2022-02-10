@@ -16,9 +16,6 @@
                 <th>ID</th>
                 <th>Sentence</th>
               </tr>
-              <tr id="myData1">
-
-              </tr>
         </table>
         <script>
             fetch('sentences.json')
@@ -34,12 +31,9 @@
             function appendData(data) {
                 var mainContainer = document.getElementById("myData");
                 for (var i = 0; i < data.length; i++) {
-                    var div = document.createElement("tr");
-                    var td = document.createElement("td");
-                    td.innerHTML = data[i].id
-                    div.innerHTML = '<td>' + data[i].id + '</td>'
-                    // div.innerHTML = data[i].id
-                    mainContainer.appendChild(div);
+                    var tr = document.createElement("tr");
+                    tr.innerHTML = '<td>' + data[i].id + '</td> <td>' + data[i].sentence + '</td>'
+                    mainContainer.appendChild(tr);
                 }
             }
         </script>
